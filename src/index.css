@@ -51,7 +51,11 @@ header div {
 
 header h1 {
     font-size: 22px;
+}
 
+header h1 a {
+    text-decoration: none;
+    color: antiquewhite;
 }
 
 header div p {
@@ -347,7 +351,8 @@ box-shadow: inset 10px 10px 20px #272727,
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #202020 0%, #2b3036 100%);
-    padding: 3vh 0;
+    /* padding: 3vh 0; */
+    padding: 12vh 0 3vh 0;
     text-shadow: 0 0 10px #80b5f5;
 }
 
@@ -479,6 +484,33 @@ box-shadow: inset 10px 10px 20px #272727,
 
 /* PROJECTS SECTION STYLES END */
 
+/* RESUME SECTION STYLES START */
+#resume {
+    width: 100vw;
+    height: 150vh;
+    background: linear-gradient(180deg, #0a1f25 0, #0e1316 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#resume h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 3%;
+    text-shadow: 0 0 10px #80b5f5;
+    margin-top: 14vh;
+}
+
+embed {
+    width: 60vw;
+    height: 120vh;
+}
+/* RESUME SECTION STYLES END */
+
+
+
 /* CONTACT SECTION STYLES START */
 #contact {
     width: 100vw;
@@ -495,7 +527,6 @@ box-shadow: inset 10px 10px 20px #272727,
     font-size: 30px;
     padding-bottom: 3%;
     text-shadow: 0 0 10px #80b5f5;
-
 }
 
 #form-wrapper {

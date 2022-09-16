@@ -47,16 +47,8 @@ const About = () => {
                     <li className="bullet-design-left"></li>
                     <li className="bullet-design-left"></li>
                     <li className="bullet-design-left"></li>
-                    <li className="bullet-design-left"></li>
-                    <li className="bullet-design-left"></li>
-                    <li className="bullet-design-left"></li>
-                    <li className="bullet-design-left"></li>
                 </ul>
                 <ul className="list-styles">
-                    <li className="bullet-design-right"></li>
-                    <li className="bullet-design-right"></li>
-                    <li className="bullet-design-right"></li>
-                    <li className="bullet-design-right"></li>
                     <li className="bullet-design-right"></li>
                     <li className="bullet-design-right"></li>
                     <li className="bullet-design-right"></li>
@@ -75,16 +67,12 @@ const About = () => {
                     <p>JAVASCRIPT</p>
                     <p>BOOTSTRAP</p>
                     <p>JQUERY</p>
-                    <p>SQL</p>
                     <p>MYSQL</p>
-                    <p>SEQUELIZE</p>
-                    <p>NOSQL</p>
                     <p>MONGODB</p>
-                    <p>MONGOOSE</p>
                     <p>INDEXEDDB</p>
                     <p>NODE.JS</p>
                     <p>EXPRESS</p>
-                    <p>HANDLEBARS</p>
+                    <p>REACT</p>
                 </div>
             </div>
         </section>

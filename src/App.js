@@ -4,30 +4,33 @@ import Nav from './components/Nav';
 import Hero from './components/Hero'
 import About from './components/About';
 import Projects from './components/Projects';
+import Resume from './components/Resume';
 import Contact from './components/Contact';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
-  const [projectsSelected, setProjectsSelected] = useState(false);
   const [aboutSelected, setAboutSelected] = useState(false);
+  const [projectsSelected, setProjectsSelected] = useState(false);
+  const [contactSelected, setContactSelected] = useState(false);
+  const [resumeSelected, setResumeSelected] = useState(false);
+  
   return (
     <div>
       <Nav
-      contactSelected={contactSelected}
-      setContactSelected={setContactSelected}
-      projectsSelected={projectsSelected}
-      setProjectsSelected={setProjectsSelected}
       aboutSelected={aboutSelected}
       setAboutSelected={setAboutSelected}
+      projectsSelected={projectsSelected}
+      setProjectsSelected={setProjectsSelected}
+      resumeSelected={resumeSelected}
+      setResumeSelected={setResumeSelected}
+      contactSelected={contactSelected}
+      setContactSelected={setContactSelected}
       ></Nav>
       <main>
         <Hero></Hero>
-        {/* <About></About>
-        <Projects></Projects>
-        <Contact></Contact> */}
         {aboutSelected && <About></About>}
         {projectsSelected && <Projects></Projects>}
-        {contactSelected && <Contact></Contact> }
+        {resumeSelected && <Resume></Resume>}
+        {contactSelected && <Contact></Contact>}
       </main>
     </div>
   );

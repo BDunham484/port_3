@@ -6,6 +6,8 @@ const Nav = (props) => {
         setAboutSelected,
         projectsSelected,
         setProjectsSelected,
+        resumeSelected,
+        setResumeSelected,
         contactSelected,
         setContactSelected
     } = props;
@@ -26,16 +28,16 @@ const Nav = (props) => {
         <nav>
             <ul>
                 <li className={`${aboutSelected && 'navActive'}`}>
-                    <a href="#about" onClick={() => {setAboutSelected(true);setProjectsSelected(false);setContactSelected(false)}}>About</a>                               
+                    <a href="#about" onClick={() => {setAboutSelected(true);setProjectsSelected(false);setResumeSelected(false);setContactSelected(false)}}>About</a>                               
                 </li>
                 <li className={`${projectsSelected && 'navActive'}`}>
-                    <a href="#projects" onClick={() => {setAboutSelected(false);setProjectsSelected(true);setContactSelected(false)}}>Projects</a>
+                    <a href="#projects" onClick={() => {setAboutSelected(false);setProjectsSelected(true);setResumeSelected(false);setContactSelected(false)}}>Projects</a>
                 </li>
-                <li>
-                    <a href="#resume">Resume</a>
+                <li className={`${resumeSelected && 'navActive'}`}>
+                    <a href="#resume" onClick={() => {setAboutSelected(false);setProjectsSelected(false);setResumeSelected(true);setContactSelected(false)}}>Resume</a>
                 </li>
                 <li className={`${contactSelected && 'navActive'}`}>
-                    <a href="#contact" onClick={() => {setAboutSelected(false);setProjectsSelected(false);setContactSelected(true)}}>Contact</a>
+                    <a href="#contact" onClick={() => {setAboutSelected(false);setProjectsSelected(false);setResumeSelected(false);setContactSelected(true)}}>Contact</a>
                 </li>
             </ul>
         </nav>
