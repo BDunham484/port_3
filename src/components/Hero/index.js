@@ -6,7 +6,7 @@ import thinTriangle from '../../assets/images/antique-white-triangle.png';
 const Hero = () => {
     return (
         // <!-- HERO SECTION -->
-        <section className="hero">
+        <section id="home" className="hero">
             <div className="typing">
                 <p id="upper">
                     Hello! My name is Brad Dunham...

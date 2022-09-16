@@ -38,6 +38,7 @@ header {
     z-index: 9999;
     position: fixed;
     width: 100vw;
+    height: 12vh;
     opacity: .90;
     background-color: #383737;
 }
@@ -73,6 +74,25 @@ header nav ul li a {
     text-decoration: none;
     letter-spacing: 3px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navActive a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7vw;
+    height: 5vh;
+    border-radius: 12px;
+background: linear-gradient(145deg, #323232, #3c3b3b);
+box-shadow:  12px 12px 24px #272727,
+            -12px -12px 24px #494848;
+    /* border-radius: 12px;
+background: #383737;
+box-shadow: inset 10px 10px 20px #272727,
+            inset -10px -10px 20px #494848;
+-webkit-box-shadow: inset 10px 10px 20px #272727,
+            inset -10px -10px 20px #494848; */
+    /* text-shadow: 0 0 50px #80b5f5; */
 }
 
 /* HEADER / NAVBAR STYLES END */
@@ -528,7 +548,10 @@ form div textarea {
     border-radius: 10px;
     background: linear-gradient(145deg, #cacaca, #f0f0f0);
     width: 50%;
-    /* margin-left: 5vh; */
+}
+
+#error-text {
+    width: 40%;
 }
 
 form button {
@@ -536,10 +559,6 @@ form button {
     height: 5vh;
     border-radius: 12px; 
     background: linear-gradient(45deg, #383737 0%, #202020 100%);
-    /* border-radius: 12px;
-background: linear-gradient(315deg, #1d1d1d, #222222);
-box-shadow:  -20px -20px 60px #1b1b1b,
-             20px 20px 60px #252525; */
     border: none;
     font-size: 30px;
     letter-spacing: 3px;
