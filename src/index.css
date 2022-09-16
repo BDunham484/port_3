@@ -1,13 +1,269 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+*::selection {
+  background-color: transparent;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #525050;
+    color: antiquewhite;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* HEADER / NAVBAR STYLES START */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 0 1vh 10vw;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 9999;
+  position: fixed;
+  width: 100vw;
+  opacity: .90;
+  background-color: #383737;
+}
+
+header div {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 22px;
+
+}
+
+header div p {
+  font-size: 10px;
+  padding-left: 15%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  width: 50vw;
+  padding: 2vh 9vw 2vh 0;
+}
+
+header nav ul li a {
+  color: antiquewhite;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* HEADER / NAVBAR STYLES END */
+
+/* HERO SECTION STYLES START */
+.hero {
+  height: 100vh;
+  width: 100vw;
+  /* Photo by <a href="https://unsplash.com/@el_ham?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hamish Weir</a> on <a href="https://unsplash.com/s/photos/night-sky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  background-image: url(./assets/images/hamish-weir-cuO6_mnbgPE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+/* TYPING STYLES / ANIMATION START*/
+.typing {
+  font-size: 3vh;
+  text-align: center;
+  position: relative;
+  height: 1%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  display: inline-block;
+  opacity: .75;
+}
+
+
+#upper {
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation: typing 6s forwards 2s, fadeout 5s forwards 10s;
+  animation-fill-mode: both;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#lower {
+  position: absolute;
+  top: 87vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation: typing 6s forwards 4s, fadeout 5s forwards 10s;
+  animation-fill-mode: both;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+
+  to {
+      width: 100%;
+  }
+}
+
+@keyframes fadeout {
+  from {
+      opacity: 1;
+  }
+
+  to {
+      opacity: 0;
+  }
+}
+
+/* TYPING STYLES / ANIMATION END */
+
+
+
+/* HERO IMAGES STYLES / ANIMATION START */
+#hero-images-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+#base-triangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -300px;
+  z-index: 1;
+}
+
+/* UPPER TRIANGLE STYLES / ANIMATION START */
+#upper-triangle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -250px;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-name: upper;
+  animation-fill-mode: backwards;
+  z-index: 2;
+}
+
+@keyframes upper {
+  from {
+      top: 20%;
+      left: 50%;
+      margin-left: -250px;
+      opacity: 0;
+  }
+
+  to {
+      top: 40%;
+      left: 50%;
+      margin-left: -250px;
+      opacity: 1;
+  }
+}
+
+/* LOWER TRIANGLE STYLES / ANIMATION START */
+#lower-triangle {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-left: -250px;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-name: lower;
+  overflow: hidden;
+  animation-fill-mode: backwards;
+  z-index: 2;
+}
+
+@keyframes lower {
+  from {
+      top: 30%;
+      left: 50%;
+      margin-left: -250px;
+      opacity: 0;
+  }
+
+  to {
+      top: 45%;
+      left: 50%;
+      margin-left: -250px;
+      opacity: 1;
+  }
+}
+
+/* COMET STYLES / ANIMATION START */
+.comet {
+  position: absolute;
+  top: -25vh;
+  right: -25vw;
+  animation-duration: .65s;
+  animation-delay: 4s;
+  animation-name: comet;
+  animation-fill-mode: backwards;
+  transform: rotate(10deg);
+  max-width: 75px;
+  max-height: auto;
+}
+
+@keyframes comet {
+  from {
+      top: -25vh;
+      right: -25vw;
+  }
+
+  to {
+      top: 100vh;
+      right: 100vw;
+  }
+}
+
+@keyframes const-comet {
+  from {
+      top: -25vh;
+      right: -25vw;
+  }
+
+  to {
+      top: 100vh;
+      right: 100vw;
+  }
+}
+
+/* HERO IMAGES STYLES / ANIMATION END */
+/* HERO SECTION STYLES END */
+
+
