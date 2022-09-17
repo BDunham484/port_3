@@ -1,4 +1,5 @@
 import React from 'react';
+import { pageReload } from '../../utils/helpers';
 
 const Nav = (props) => {
     const {
@@ -16,7 +17,7 @@ const Nav = (props) => {
         <header>
         <div>
             <h1>
-                <a href="#home">
+                <a href="#home" onClick={() => {setAboutSelected(false);setProjectsSelected(false);setResumeSelected(false);setContactSelected(false);pageReload()}}>
                 Brad Dunham
                 </a>
             </h1>

@@ -6,6 +6,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [aboutSelected, setAboutSelected] = useState(false);
@@ -31,6 +32,7 @@ function App() {
         {projectsSelected && <Projects></Projects>}
         {resumeSelected && <Resume></Resume>}
         {contactSelected && <Contact></Contact>}
+        <Footer></Footer>
       </main>
     </div>
   );
