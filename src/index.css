@@ -106,8 +106,9 @@ box-shadow: inset 10px 10px 20px #272727,
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 21vw;
+    min-width: 40vw;
     height: 10vh;
+    margin-right: 0;
     border-radius: 12px;
     background: linear-gradient(145deg, #323232, #3c3b3b);
     box-shadow: 12px 12px 24px #272727,
@@ -1866,7 +1867,7 @@ footer a img {
 
 @media screen and (orientation: portrait) and (max-width: 575px) {
     header nav ul {
-        margin-right: 5vw;
+        /* margin-right: 5vw; */
         width: 37vw;
     }
 
