@@ -1679,7 +1679,8 @@ footer a img {
 
 @media screen and (orientation: portrait) and (max-width: 1000px) {
     #MobileNavigation {
-        display: block;
+        display: flex;
+        background-color: lightslategray;
     }
 
     #Navigation {
