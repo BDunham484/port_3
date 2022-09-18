@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/port_3/static/css/main.5fb59d3c.css",
-    "main.js": "/port_3/static/js/main.b24443ab.js",
-    "static/js/787.24f5553e.chunk.js": "/port_3/static/js/787.24f5553e.chunk.js",
-    "static/media/hamish-weir-cuO6_mnbgPE-unsplash.jpg": "/port_3/static/media/hamish-weir-cuO6_mnbgPE-unsplash.59cf82119262d62a4b88.jpg",
-    "static/media/petSpace-screenshot.png": "/port_3/static/media/petSpace-screenshot.bcbe2ad26d254296d2d6.png",
-    "static/media/orbit-watches-home.png": "/port_3/static/media/orbit-watches-home.438411a870797f09b520.png",
-    "static/media/transparent-5-moon-180.png": "/port_3/static/media/transparent-5-moon-180.02e4e9c4bef680776f85.png",
-    "static/media/mookies-screenshot.png": "/port_3/static/media/mookies-screenshot.833f7c8ef2488b052871.png",
-    "static/media/weather-dashboard.png": "/port_3/static/media/weather-dashboard.c2a0e1a70027c1817536.png",
-    "static/media/textured-triangle.png": "/port_3/static/media/textured-triangle.24ee2c1d5662977b8232.png",
-    "static/media/insomnia.png": "/port_3/static/media/insomnia.cb5491b1e17614cc9bb2.png",
-    "static/media/selfie.png": "/port_3/static/media/selfie.8024001fb59adae470b3.png",
-    "static/media/tech-blog-home.png": "/port_3/static/media/tech-blog-home.6d07b97532b03412c093.png",
-    "static/media/work-day-scheduler.png": "/port_3/static/media/work-day-scheduler.cd30a097853e5bbab141.png",
-    "static/media/Resume.pdf": "/port_3/static/media/Resume.228ff44973a86fc82670.pdf",
-    "static/media/lighter-textured-triangle.png": "/port_3/static/media/lighter-textured-triangle.44fdba835fb276792f27.png",
-    "static/media/antique-white-triangle.png": "/port_3/static/media/antique-white-triangle.8307ebf837f913809acb.png",
-    "index.html": "/port_3/index.html",
-    "main.5fb59d3c.css.map": "/port_3/static/css/main.5fb59d3c.css.map",
-    "main.b24443ab.js.map": "/port_3/static/js/main.b24443ab.js.map",
-    "787.24f5553e.chunk.js.map": "/port_3/static/js/787.24f5553e.chunk.js.map"
+    "main.css": "/port_3/about/static/css/main.bdddb120.css",
+    "main.js": "/port_3/about/static/js/main.f577ba31.js",
+    "static/js/787.24f5553e.chunk.js": "/port_3/about/static/js/787.24f5553e.chunk.js",
+    "static/media/hamish-weir-cuO6_mnbgPE-unsplash.jpg": "/port_3/about/static/media/hamish-weir-cuO6_mnbgPE-unsplash.59cf82119262d62a4b88.jpg",
+    "static/media/petSpace-screenshot.png": "/port_3/about/static/media/petSpace-screenshot.bcbe2ad26d254296d2d6.png",
+    "static/media/orbit-watches-home.png": "/port_3/about/static/media/orbit-watches-home.438411a870797f09b520.png",
+    "static/media/transparent-5-moon-180.png": "/port_3/about/static/media/transparent-5-moon-180.02e4e9c4bef680776f85.png",
+    "static/media/mookies-screenshot.png": "/port_3/about/static/media/mookies-screenshot.833f7c8ef2488b052871.png",
+    "static/media/weather-dashboard.png": "/port_3/about/static/media/weather-dashboard.c2a0e1a70027c1817536.png",
+    "static/media/textured-triangle.png": "/port_3/about/static/media/textured-triangle.24ee2c1d5662977b8232.png",
+    "static/media/insomnia.png": "/port_3/about/static/media/insomnia.cb5491b1e17614cc9bb2.png",
+    "static/media/selfie.png": "/port_3/about/static/media/selfie.8024001fb59adae470b3.png",
+    "static/media/tech-blog-home.png": "/port_3/about/static/media/tech-blog-home.6d07b97532b03412c093.png",
+    "static/media/work-day-scheduler.png": "/port_3/about/static/media/work-day-scheduler.cd30a097853e5bbab141.png",
+    "static/media/Resume.pdf": "/port_3/about/static/media/Resume.228ff44973a86fc82670.pdf",
+    "static/media/lighter-textured-triangle.png": "/port_3/about/static/media/lighter-textured-triangle.44fdba835fb276792f27.png",
+    "static/media/antique-white-triangle.png": "/port_3/about/static/media/antique-white-triangle.8307ebf837f913809acb.png",
+    "index.html": "/port_3/about/index.html",
+    "main.bdddb120.css.map": "/port_3/about/static/css/main.bdddb120.css.map",
+    "main.f577ba31.js.map": "/port_3/about/static/js/main.f577ba31.js.map",
+    "787.24f5553e.chunk.js.map": "/port_3/about/static/js/787.24f5553e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fb59d3c.css",
-    "static/js/main.b24443ab.js"
+    "static/css/main.bdddb120.css",
+    "static/js/main.f577ba31.js"
   ]
 }
