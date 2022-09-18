@@ -100,6 +100,20 @@ box-shadow: inset 10px 10px 20px #272727,
     /* text-shadow: 0 0 50px #80b5f5; */
 }
 
+.navMobileLinks {
+    font-size: 22px;
+    text-shadow: 0 0 10px #80b5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21vw;
+    height: 10vh;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #323232, #3c3b3b);
+    box-shadow: 12px 12px 24px #272727,
+        -12px -12px 24px #494848;
+}
+
 #MobileNavigation {
     display: none;
 }
@@ -1680,7 +1694,29 @@ footer a img {
 @media screen and (orientation: portrait) and (max-width: 1000px) {
     #MobileNavigation {
         display: flex;
-        background-color: lightslategray;
+        align-items: center;
+    }
+
+    #MobileNavigation ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute; 
+        top: 12vh;
+        right: 0;
+        width: 100vw;
+        height: 88vh;
+        background-color: #383737;
+        padding: 0;
+        border-top: 2px solid antiquewhite;
+    }
+
+    #hamburger {
+        color: antiquewhite;
+        width: 40px;
+        height: auto;
+        position: absolute;
+        right: 10%;
+        cursor: pointer;
     }
 
     #Navigation {
