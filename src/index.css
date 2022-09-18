@@ -100,6 +100,14 @@ box-shadow: inset 10px 10px 20px #272727,
     /* text-shadow: 0 0 50px #80b5f5; */
 }
 
+#MobileNavigation {
+    display: none;
+}
+
+#Navigation {
+    display: block;
+}
+
 /* HEADER / NAVBAR STYLES END */
 
 /* HERO SECTION STYLES START */
@@ -1670,6 +1678,14 @@ footer a img {
 
 
 @media screen and (orientation: portrait) and (max-width: 1000px) {
+    #MobileNavigation {
+        display: block;
+    }
+
+    #Navigation {
+        display: none;
+    }
+
     .comet {
         transform: rotate(-15deg);
     }

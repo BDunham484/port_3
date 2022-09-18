@@ -1,4 +1,6 @@
 import React from 'react';
+// import Navigation from './Navigation';
+// import MobileNavigation from './MobileNavigation';
 import { pageReload } from '../../utils/helpers';
 
 const Nav = (props) => {
@@ -26,22 +28,40 @@ const Nav = (props) => {
             </p>
         </div>
         {/* <!-- NAV LINKS --> */}
-        <nav>
+        < nav id="Navigation">
             <ul>
                 <li className={`${aboutSelected && 'navActive'}`}>
-                    <a href="#about" onClick={() => {setAboutSelected(true);setProjectsSelected(false);setResumeSelected(false);setContactSelected(false)}}>About</a>                               
+                    <a href="#about" onClick={() => { setAboutSelected(true); setProjectsSelected(false); setResumeSelected(false); setContactSelected(false) }}>About</a>
                 </li>
                 <li className={`${projectsSelected && 'navActive'}`}>
-                    <a href="#projects" onClick={() => {setAboutSelected(false);setProjectsSelected(true);setResumeSelected(false);setContactSelected(false)}}>Projects</a>
+                    <a href="#projects" onClick={() => { setAboutSelected(false); setProjectsSelected(true); setResumeSelected(false); setContactSelected(false) }}>Projects</a>
                 </li>
                 <li className={`${resumeSelected && 'navActive'}`}>
-                    <a href="#resume" onClick={() => {setAboutSelected(false);setProjectsSelected(false);setResumeSelected(true);setContactSelected(false)}}>Resume</a>
+                    <a href="#resume" onClick={() => { setAboutSelected(false); setProjectsSelected(false); setResumeSelected(true); setContactSelected(false) }}>Resume</a>
                 </li>
                 <li className={`${contactSelected && 'navActive'}`}>
-                    <a href="#contact" onClick={() => {setAboutSelected(false);setProjectsSelected(false);setResumeSelected(false);setContactSelected(true)}}>Contact</a>
+                    <a href="#contact" onClick={() => { setAboutSelected(false); setProjectsSelected(false); setResumeSelected(false); setContactSelected(true) }}>Contact</a>
                 </li>
             </ul>
-        </nav>
+        </nav >
+        < nav id="MobileNavigation">
+            <ul>
+                <li className={`${aboutSelected && 'navActive'}`}>
+                    <a href="#about" onClick={() => { setAboutSelected(true); setProjectsSelected(false); setResumeSelected(false); setContactSelected(false) }}>About</a>
+                </li>
+                <li className={`${projectsSelected && 'navActive'}`}>
+                    <a href="#projects" onClick={() => { setAboutSelected(false); setProjectsSelected(true); setResumeSelected(false); setContactSelected(false) }}>Projects</a>
+                </li>
+                <li className={`${resumeSelected && 'navActive'}`}>
+                    <a href="#resume" onClick={() => { setAboutSelected(false); setProjectsSelected(false); setResumeSelected(true); setContactSelected(false) }}>Resume</a>
+                </li>
+                <li className={`${contactSelected && 'navActive'}`}>
+                    <a href="#contact" onClick={() => { setAboutSelected(false); setProjectsSelected(false); setResumeSelected(false); setContactSelected(true) }}>Contact</a>
+                </li>
+            </ul>
+        </nav >
+        {/* <Navigation></Navigation>
+        <MobileNavigation></MobileNavigation> */}
     </header>
     )
 };
