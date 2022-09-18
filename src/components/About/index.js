@@ -7,18 +7,18 @@ const About = () => {
         // <!-- ABOUT SECTION -->
         <section id="about">
             <div className="about-me">
-                <div>
+                <div className="about-images-wrapper">
                     <span className="about-image-triangle-left">
                         <img src={texturedTriangle}
-                    alt="small light grey textured triangle with a gold border" />
+                            alt="small light grey textured triangle with a gold border" />
                     </span>
                     <span id="about-selfie">
                         <img src={Selfie}
-                        alt="half of my face in black and white with a neon triangle floating around it" />
+                            alt="half of my face in black and white with a neon triangle floating around it" />
                     </span>
                     <span className="about-image-triangle-right">
                         <img src={texturedTriangle}
-                    alt="small light grey textured triangle with a gold border" />
+                            alt="small light grey textured triangle with a gold border" />
                     </span>
                 </div>
                 <div>

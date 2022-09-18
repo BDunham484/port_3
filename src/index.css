@@ -312,12 +312,15 @@ box-shadow: inset 10px 10px 20px #272727,
     z-index: 1;
 }
 
-/* .about-me div:nth-child(1) img {
-  width: 15vw;
-} */
+.about-images-wrapper {
+    margin-top: 3vh;
+    margin-bottom: -8vh;
+}
+
+
 
 #about-selfie img {
-    width: 25vh;
+    width:20vh;
 }
 
 .about-me div:nth-child(2) {
@@ -417,6 +420,13 @@ box-shadow: inset 10px 10px 20px #272727,
     height: auto;
     border: 3px solid antiquewhite;
     transition: .5s;
+}
+
+.main-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30% 0 2% 0;
 }
 
 .project-title-wrapper {

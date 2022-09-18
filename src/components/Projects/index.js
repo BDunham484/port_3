@@ -13,7 +13,7 @@ const Projects = () => {
         // <!-- PROJECTS SECTION -->
         <section id="projects">
             <div>
-                <div className="project-title-wrapper">
+                <div className="main-title-wrapper">
                     <p id="main-title">
                         PETSPACE
                     </p>
@@ -149,10 +149,7 @@ const Projects = () => {
                 </div>
                 <div className="project-description">
                     <div className="project-text-container">
-                        <div className="project-text">I develop Fitbit clock faces and sell them in their app store. The clock
-                            faces
-                            are developed using SVG, CSS, JS and a decent helping of Photoshop. This is a
-                            simple website I built to showcase them all.</div>
+                        <div className="project-text">A third-party API based work day scheduler. It uses local storage for data persistence.</div>
                     </div>
                 </div>
                 <div>
