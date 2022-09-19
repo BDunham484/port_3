@@ -91,13 +91,6 @@ header nav ul li a {
     background: linear-gradient(145deg, #323232, #3c3b3b);
     box-shadow: 12px 12px 24px #272727,
         -12px -12px 24px #494848;
-    /* border-radius: 12px;
-background: #383737;
-box-shadow: inset 10px 10px 20px #272727,
-            inset -10px -10px 20px #494848;
--webkit-box-shadow: inset 10px 10px 20px #272727,
-            inset -10px -10px 20px #494848; */
-    /* text-shadow: 0 0 50px #80b5f5; */
 }
 
 .navMobileLinks {
@@ -528,7 +521,7 @@ box-shadow: inset 10px 10px 20px #272727,
 /* RESUME SECTION STYLES START */
 #resume {
     width: 100vw;
-    height: 150vh;
+    min-height: 100vh;
     background: linear-gradient(180deg, #0a1f25 0, #0e1316 100%);
     display: flex;
     justify-content: center;
@@ -547,6 +540,30 @@ box-shadow: inset 10px 10px 20px #272727,
 embed {
     width: 60vw;
     height: 120vh;
+}
+
+#page-selection {
+    display: flex;
+    align-items: center;
+    text-shadow: 0 0 10px #80b5f5;
+}
+
+#page-selection span {
+    font-size: 20px;
+}
+
+#left-arrow {
+    width: 60px;
+    height: auto;
+    margin-right: 3vw;
+    cursor: pointer;
+}
+
+#right-arrow {
+    width: 60px;
+    height: auto;
+    margin-left: 3vw;
+    cursor: pointer;
 }
 
 /* RESUME SECTION STYLES END */
@@ -656,13 +673,11 @@ footer {
 
 footer a {
     padding-left: 2vw;
-    /* z-index: 9999; */
 }
 
 footer a img {
     width: 4vw;
     height: auto;
-    /* z-index: 9999; */
 }
 
 /* FOOTER STYLES END */
@@ -1742,16 +1757,16 @@ footer a img {
     }
 
     .wrapped-img {
-        width: 80vw;
+        width: 90vw;
     }
 
     .project-description {
-        width: 80vw;
+        width: 90vw;
         min-height: 12vh;
     }
 
     .project-text-container {
-        width: 60vw;
+        width: 88vw;
         min-height: 10vh;
     }
 
@@ -2152,22 +2167,22 @@ footer a img {
             opacity: 1;
         }
     }
-
-    /* .about-me {
-      height: 95vh;
-      padding-top: 15vh;
-  } */
-
-    /* .about-me div:nth-child(2) h2 {
-      font-size: 3vw;
-  } */
-
+    /* ABOUT ME STYLES */
     .about-me div:nth-child(2) {
         padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .about-me div:nth-child(2) h2 {
+        font-size: 20px;
     }
 
     .about-me div:nth-child(2) p {
         font-size: 16px;
+    }
+
+    #about-selfie img {
+        display: none;
     }
 
     .about-image-triangle-left img {
@@ -2178,17 +2193,6 @@ footer a img {
         display: none;
     }
 
-    /* .bullet-design-left {
-      padding-left: 25px;
-      padding-top: 4px;
-      padding-bottom: 4px;
-      
-  } */
-
-    /* .bullet-design-right {
-      padding-left: 15px;
-  } */
-
     .skills {
         font-size: 16px;
     }
@@ -2196,26 +2200,49 @@ footer a img {
     .skills p {
         width: 80vw;
     }
-
-    #main-title {
+    /* PROJECTS STYLES */
+    /* #main-title {
         margin: 32% 0 2% 0;
-    }
+    } */
 
 
-    .content {
+    /* .content {
         font-size: 16px;
-    }
+    } */
 
-    .hover-effect .content:hover .text {
+    /* .hover-effect .content:hover .text {
         opacity: 1;
         transform: translateY(1vh);
         -webkit-transform: translateY(1vh);
+    } */
+    /* RESUME SECTION STYLES */
+    embed {
+        width: 60vw;
+        height: 120vh;
     }
 
+    iframe {
+        width: 90vw;
+        height: 100vh;
+        /* overflow: hidden; */
+    }
 
     form div {
         padding: 30px 0 30px 5px;
         min-width: 85%;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    footer a {
+        padding: 0 9vw;
+    }
+    
+    footer a img {
+        width: 8vw;
+        height: auto;
     }
 
 }
