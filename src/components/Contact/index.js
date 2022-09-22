@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -27,13 +28,26 @@ const Contact = () => {
         };
         console.log('errorMessage: ', errorMessage);
     }
-    const handleSubmit = e => {
+    // const handleSubmit = e => {
+    //     e.preventDefault();
+    //     if (!errorMessage) {
+    //         sendEmail();
+    //         setFormState({ [e.target.name]: e.target.value });
+    //         console.log('Form', formState);
+    //     }
+    // }
+    const form = useRef();
+    const sendEmail = (e) => {
+        console.log('sendEmail function triggered!')
         e.preventDefault();
-        if (!errorMessage) {
-            setFormState({ [e.target.name]: e.target.value });
-            console.log('Form', formState);
-        }
-    }
+
+        emailjs.sendForm('service_63e1zik', 'template_1zhznge', form.current, 'Imajd3lpsj1GkrWzP')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
     return (
         // <!-- CONTACT SECTION -->
         <section id="contact">
@@ -41,18 +55,18 @@ const Contact = () => {
                 CONTACT ME
             </h2>
             <div id="form-wrapper" >
-                <form onSubmit={handleSubmit}>
+                <form ref={form} onSubmit={sendEmail}>
                     <div>
                         <label htmlFor="name">Name:</label>
-                        <input type="text" defaultValue={name} onChange={handleChange} name="name" />
+                        <input type="text" defaultValue={name} placeholder="Full Name" onChange={handleChange} name="name" />
                     </div>
                     <div>
                         <label htmlFor="email">Email:</label>
-                        <input type="email" defaultValue={email} onChange={handleChange} name="email" />
+                        <input type="email" defaultValue={email} placeholder="Email" onChange={handleChange} name="email" />
                     </div>
                     <div>
                         <label htmlFor="message">Message:</label>
-                        <textarea name="message" defaultValue={message} onChange={handleChange} rows="8" />
+                        <textarea name="message" defaultValue={message} placeholder="Message" onChange={handleChange} rows="8" />
                     </div>
                     {errorMessage && (
                         <div id="error-text">

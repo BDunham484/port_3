@@ -645,6 +645,7 @@ form button {
     letter-spacing: 3px;
     text-shadow: 0 0 10px #80b5f5;
     color: antiquewhite;
+    cursor: pointer;
 }
 /* CONTACT SECTION STYLES END */
 
