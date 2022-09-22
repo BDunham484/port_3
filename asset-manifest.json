@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/port_3/static/css/main.f5162ddc.css",
+    "main.css": "/port_3/static/css/main.9637e722.css",
     "main.js": "/port_3/static/js/main.59fa36ca.js",
     "static/js/787.24f5553e.chunk.js": "/port_3/static/js/787.24f5553e.chunk.js",
     "static/media/hamish-weir-cuO6_mnbgPE-unsplash.jpg": "/port_3/static/media/hamish-weir-cuO6_mnbgPE-unsplash.59cf82119262d62a4b88.jpg",
@@ -18,12 +18,12 @@
     "static/media/lighter-textured-triangle.png": "/port_3/static/media/lighter-textured-triangle.44fdba835fb276792f27.png",
     "static/media/antique-white-triangle.png": "/port_3/static/media/antique-white-triangle.8307ebf837f913809acb.png",
     "index.html": "/port_3/index.html",
-    "main.f5162ddc.css.map": "/port_3/static/css/main.f5162ddc.css.map",
+    "main.9637e722.css.map": "/port_3/static/css/main.9637e722.css.map",
     "main.59fa36ca.js.map": "/port_3/static/js/main.59fa36ca.js.map",
     "787.24f5553e.chunk.js.map": "/port_3/static/js/787.24f5553e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5162ddc.css",
+    "static/css/main.9637e722.css",
     "static/js/main.59fa36ca.js"
   ]
 }
