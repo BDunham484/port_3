@@ -623,12 +623,18 @@ form div input {
     background: linear-gradient(145deg, #cacaca, #f0f0f0);
     width: 50%;
     margin-left: 5vh;
+    padding-left: 10px;
+    font-size: 16px;
+    
 }
 
 form div textarea {
     border-radius: 10px;
     background: linear-gradient(145deg, #cacaca, #f0f0f0);
     width: 50%;
+    padding-left: 10px;
+    font-size: 16px;
+    
 }
 
 #error-text {

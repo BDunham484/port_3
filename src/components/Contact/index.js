@@ -36,6 +36,8 @@ const Contact = () => {
     //         console.log('Form', formState);
     //     }
     // }
+   
+
     const form = useRef();
     const sendEmail = (e) => {
         console.log('sendEmail function triggered!')
@@ -47,7 +49,17 @@ const Contact = () => {
             }, (error) => {
                 console.log(error.text);
             });
+            formReset();
+            console.log(e.target)
+            e.target.reset();
     };
+
+    const formReset = () => {
+        console.log("formReset() has been clicked!")
+        console.log(formState);
+        setFormState({ name: '', email: '', message: '' });
+        
+    }
     return (
         // <!-- CONTACT SECTION -->
         <section id="contact">
@@ -55,7 +67,7 @@ const Contact = () => {
                 CONTACT ME
             </h2>
             <div id="form-wrapper" >
-                <form ref={form} onSubmit={sendEmail}>
+                <form ref={form} id="contactForm"onSubmit={sendEmail}>
                     <div>
                         <label htmlFor="name">Name:</label>
                         <input type="text" defaultValue={name} placeholder="Full Name" onChange={handleChange} name="name" />
