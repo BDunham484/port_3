@@ -1,18 +1,50 @@
 import React from 'react';
-import petSpaceScreenshot from '../../assets/images/petSpace-screenshot.png';
-import todaysTechScreenshot from '../../assets/images/tech-blog-home.png';
-import weatherDashboardScreenshot from '../../assets/images/weather-dashboard.png';
-import mookiesScreenshot from '../../assets/images/mookies-screenshot.png';
-import orbitWathcesScreenshot from '../../assets/images/orbit-watches-home.png';
+// import petSpaceScreenshot from '../../assets/images/petSpace-screenshot.png';
+// import todaysTechScreenshot from '../../assets/images/tech-blog-home.png';
+// import weatherDashboardScreenshot from '../../assets/images/weather-dashboard.png';
+// import mookiesScreenshot from '../../assets/images/mookies-screenshot.png';
+// import orbitWathcesScreenshot from '../../assets/images/orbit-watches-home.png';
 import githubLogo from '../../assets/images/github-circle-small.png';
-import socialInsomnia from '../../assets/images/insomnia.png';
-import schedulerSceenshot from '../../assets/images/work-day-scheduler.png';
+// import socialInsomnia from '../../assets/images/insomnia.png';
+// import schedulerSceenshot from '../../assets/images/work-day-scheduler.png';
 
-const Portfolio = () => {
+const Portfolio = (props) => {
+    const {
+        projects = [],
+    } = props;
+    
     return (
         // <!-- PROJECTS SECTION -->
         <section id="portfolio">
-            <div>
+            <div className="project-wrapper">
+                {projects.map((project) => (
+                    <div>
+                    <div className="project-title-wrapper">
+                        <p className='wrapped-titles'>
+                            {project.name}
+                        </p>
+                        <span>
+                            <a className="githubLogo" href={project.githubLink} target="_blank" rel="noreferrer">
+                                <img src={githubLogo} alt="Github Logo" />
+                            </a>
+                        </span>
+                    </div>
+                    <a href={project.projectLink} target="_blank" rel="noreferrer"><img className={project.imgId}
+                    src={project.img}
+                    alt={project.alt} />
+                    </a>
+            
+                    <div className="project-description">
+                        <div className="project-text-container">
+                            <div className="project-text">
+                                {project.projectText}
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                ))}
+            </div>
+            {/* <div>
                 <div className="main-title-wrapper">
                     <p id="main-title">
                         PETSPACE
@@ -176,7 +208,7 @@ const Portfolio = () => {
                             simple website I built to showcase them all.</div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 };
