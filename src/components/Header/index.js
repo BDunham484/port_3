@@ -52,7 +52,6 @@ const Header = (props) => {
             </ul>
         </nav >
         < nav id="MobileNavigation">
-            {/* <VscMenu id="hamburger" onClick={() => setOpen(!open)}/> */}
             {open ? closeIcon : hamburgerIcon}
             {open && <ul>
                 <motion.li initial={animateFrom}
@@ -81,8 +80,6 @@ const Header = (props) => {
                 </motion.li>
             </ul>}
         </nav >
-        {/* <Navigation></Navigation>
-        <MobileNavigation></MobileNavigation> */}
     </header>
     )
 };
