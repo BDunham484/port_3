@@ -420,32 +420,11 @@ header nav ul li a {
     flex-direction: column;
 }
 
-#main-img {
-    width: 60vw;
-    height: auto;
-    border: 3px solid antiquewhite;
-    transition: .5s;
-}
-
-.main-title-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:13vh 0 2vh 0;
-}
-
 .project-title-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 12% 0 2% 0;
-}
-
-#main-title {
-    font-size: 24px;
-    letter-spacing: 3px;
-    text-shadow: 0 0 10px #80b5f5;
-    text-align: center;
+    margin: 13vh 0 2vh 0;
 }
 
 .project-wrapper {
@@ -866,12 +845,9 @@ footer a img {
     }
 
     /* PROJECTS SECTION */
-    #main-img {
-        width: 90vw;
-    }
 
     .wrapped-img {
-        width: 80vw;
+        width: 90vw;
     }
 
     /* CONTACT SECTION */
@@ -1022,13 +998,9 @@ and (max-device-width: 1200px) {
     .project-text-container {
         width: 80vw;
     }
-    /* PROJECT STYLES */
-    #main-img {
-        width: 85vw;
-    }
 
     .wrapped-img {
-        width: 80vw;
+        width: 85vw;
     }
 
     /* CONTACT STYLES */
@@ -1180,7 +1152,7 @@ and (max-device-width: 1200px) {
     .project-text {
         font-size: 20px;
     }
-
+    /* CONTACT STYLES */
     #contact form {
         font-size: 1.75vw;
     }
@@ -1292,12 +1264,9 @@ and (max-device-width: 1200px) {
     }
 
     /* PROJECTS SECTION */
-    #main-img {
-        width: 90vw;
-    }
 
     .wrapped-img {
-        width: 85vw;
+        width: 90vw;
     }
 
     /* CONTACT SECTION */
@@ -1412,12 +1381,9 @@ and (max-device-width: 1200px) {
     }
 
     /* PROJECTS SECTION */
-    #main-img {
-        width: 85vw;
-    }
 
     .wrapped-img {
-        width: 80vw;
+        width: 85vw;
     }
 
     /* CONTACT SECTION */
@@ -1527,12 +1493,8 @@ and (max-device-width: 1200px) {
 
     /* PROJECTS SECTION */
 
-    #main-img {
-        width: 85vw;
-    }
-
     .wrapped-img {
-        width: 80vw;
+        width: 85vw;
     }
 
     .project-wrapper {
@@ -1673,12 +1635,9 @@ and (device-height: 540px) {
     }
 
     /* PROJECTS SECTION */
-    #main-img {
-        width: 85vw;
-    }
 
     .wrapped-img {
-        width: 80vw;
+        width: 85vw;
     }
 
     /* CONTACT SECTION */
@@ -1784,12 +1743,8 @@ and (device-height: 540px) {
 
     /* PROJECTS SECTION */
 
-    #main-img {
-        width: 85vw;
-    }
-
     .wrapped-img {
-        width: 80vw;
+        width: 85vw;
     }
 
     .project-description {
@@ -1867,10 +1822,6 @@ and (device-height: 540px) {
 
     .about-me div:nth-child(2) {
         width: 80%;
-    }
-
-    #main-img {
-        width: 90vw;
     }
 
     .wrapped-img {
