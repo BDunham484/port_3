@@ -451,6 +451,11 @@ header nav ul li a {
     text-align: center;
 }
 
+.description-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .project-description {
     width: 45vw;
     min-height: 12vh;
