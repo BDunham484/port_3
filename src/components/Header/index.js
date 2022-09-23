@@ -1,17 +1,15 @@
 import React from 'react';
-// import Navigation from './Navigation';
-// import MobileNavigation from './MobileNavigation';
 import { useState } from 'react';
 import { pageReload } from '../../utils/helpers';
 import { VscMenu, VscChromeClose } from 'react-icons/vsc';
 import { motion } from 'framer-motion';
 
-const Nav = (props) => {
+const Header = (props) => {
     const {
         aboutSelected,
         setAboutSelected,
-        projectsSelected,
-        setProjectsSelected,
+        portfolioSelected,
+        setPortfolioSelected,
         resumeSelected,
         setResumeSelected,
         contactSelected,
@@ -28,7 +26,7 @@ const Nav = (props) => {
         <header>
         <div>
             <h1>
-                <a href="#home" onClick={() => {setAboutSelected(false);setProjectsSelected(false);setResumeSelected(false);setContactSelected(false);closeMobileMenu();pageReload()}}>
+                <a href="#home" onClick={() => {setAboutSelected(false);setPortfolioSelected(false);setResumeSelected(false);setContactSelected(false);closeMobileMenu();pageReload()}}>
                 Brad Dunham
                 </a>
             </h1>
@@ -40,16 +38,16 @@ const Nav = (props) => {
         < nav id="Navigation">
             <ul>
                 <li className={`${aboutSelected && 'navActive'}`}>
-                    <a href="#about" onClick={() => { setAboutSelected(true); setProjectsSelected(false); setResumeSelected(false); setContactSelected(false) }}>About</a>
+                    <a href="#about" onClick={() => { setAboutSelected(true); setPortfolioSelected(false); setResumeSelected(false); setContactSelected(false) }}>About</a>
                 </li>
-                <li className={`${projectsSelected && 'navActive'}`}>
-                    <a href="#projects" onClick={() => { setAboutSelected(false); setProjectsSelected(true); setResumeSelected(false); setContactSelected(false) }}>Projects</a>
+                <li className={`${portfolioSelected && 'navActive'}`}>
+                    <a href="#portfolio" onClick={() => { setAboutSelected(false); setPortfolioSelected(true); setResumeSelected(false); setContactSelected(false) }}>Portfolio</a>
                 </li>
                 <li className={`${resumeSelected && 'navActive'}`}>
-                    <a href="#resume" onClick={() => { setAboutSelected(false); setProjectsSelected(false); setResumeSelected(true); setContactSelected(false) }}>Resume</a>
+                    <a href="#resume" onClick={() => { setAboutSelected(false); setPortfolioSelected(false); setResumeSelected(true); setContactSelected(false) }}>Resume</a>
                 </li>
                 <li className={`${contactSelected && 'navActive'}`}>
-                    <a href="#contact" onClick={() => { setAboutSelected(false); setProjectsSelected(false); setResumeSelected(false); setContactSelected(true) }}>Contact</a>
+                    <a href="#contact" onClick={() => { setAboutSelected(false); setPortfolioSelected(false); setResumeSelected(false); setContactSelected(true) }}>Contact</a>
                 </li>
             </ul>
         </nav >
@@ -61,25 +59,25 @@ const Nav = (props) => {
                 animate={animateTo}
                 transition={{delay: 0.05}}
                 className={`${aboutSelected}`}>
-                    <a className="navMobileLinks" href="#about" onClick={() => { setAboutSelected(true); setProjectsSelected(false); setResumeSelected(false); setContactSelected(false);closeMobileMenu() }}>About</a>
+                    <a className="navMobileLinks" href="#about" onClick={() => { setAboutSelected(true); setPortfolioSelected(false); setResumeSelected(false); setContactSelected(false);closeMobileMenu() }}>About</a>
                 </motion.li>
                 <motion.li initial={animateFrom}
                 animate={animateTo}
                 transition={{delay: 0.10}}
                 className={`${aboutSelected}`}>
-                    <a className="navMobileLinks" href="#projects" onClick={() => { setAboutSelected(false); setProjectsSelected(true); setResumeSelected(false); setContactSelected(false);closeMobileMenu() }}>Projects</a>
+                    <a className="navMobileLinks" href="#portfolio" onClick={() => { setAboutSelected(false); setPortfolioSelected(true); setResumeSelected(false); setContactSelected(false);closeMobileMenu() }}>Portfolio</a>
                 </motion.li>
                 <motion.li initial={animateFrom}
                 animate={animateTo}
                 transition={{delay: 0.20}}
                 className={`${aboutSelected}`}>
-                    <a className="navMobileLinks" href="#resume" onClick={() => { setAboutSelected(false); setProjectsSelected(false); setResumeSelected(true); setContactSelected(false);closeMobileMenu() }}>Resume</a>
+                    <a className="navMobileLinks" href="#resume" onClick={() => { setAboutSelected(false); setPortfolioSelected(false); setResumeSelected(true); setContactSelected(false);closeMobileMenu() }}>Resume</a>
                 </motion.li>
                 <motion.li initial={animateFrom}
                 animate={animateTo}
                 transition={{delay: 0.30}}
                 className={`${aboutSelected}`}>
-                    <a className="navMobileLinks" href="#contact" onClick={() => { setAboutSelected(false); setProjectsSelected(false); setResumeSelected(false); setContactSelected(true);closeMobileMenu() }}>Contact</a>
+                    <a className="navMobileLinks" href="#contact" onClick={() => { setAboutSelected(false); setPortfolioSelected(false); setResumeSelected(false); setContactSelected(true);closeMobileMenu() }}>Contact</a>
                 </motion.li>
             </ul>}
         </nav >
@@ -89,4 +87,4 @@ const Nav = (props) => {
     )
 };
 
-export default Nav;
+export default Header;

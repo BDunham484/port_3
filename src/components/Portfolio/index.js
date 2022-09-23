@@ -8,10 +8,10 @@ import githubLogo from '../../assets/images/github-circle-small.png';
 import socialInsomnia from '../../assets/images/insomnia.png';
 import schedulerSceenshot from '../../assets/images/work-day-scheduler.png';
 
-const Projects = () => {
+const Portfolio = () => {
     return (
         // <!-- PROJECTS SECTION -->
-        <section id="projects">
+        <section id="portfolio">
             <div>
                 <div className="main-title-wrapper">
                     <p id="main-title">
@@ -181,4 +181,4 @@ const Projects = () => {
     )
 };
 
-export default Projects;
+export default Portfolio;

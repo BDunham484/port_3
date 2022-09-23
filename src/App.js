@@ -1,35 +1,35 @@
 import React, { useState } from 'react';
 import './App.css';
-import Nav from './components/Nav';
+import Header from './components/Header';
 import Hero from './components/Hero'
 import About from './components/About';
-import Projects from './components/Projects';
+import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
   const [aboutSelected, setAboutSelected] = useState(true);
-  const [projectsSelected, setProjectsSelected] = useState(false);
+  const [portfolioSelected, setPortfolioSelected] = useState(false);
   const [contactSelected, setContactSelected] = useState(false);
   const [resumeSelected, setResumeSelected] = useState(false);
   
   return (
     <div>
-      <Nav
+      <Header
       aboutSelected={aboutSelected}
       setAboutSelected={setAboutSelected}
-      projectsSelected={projectsSelected}
-      setProjectsSelected={setProjectsSelected}
+      portfolioSelected={portfolioSelected}
+      setPortfolioSelected={setPortfolioSelected}
       resumeSelected={resumeSelected}
       setResumeSelected={setResumeSelected}
       contactSelected={contactSelected}
       setContactSelected={setContactSelected}
-      ></Nav>
+      ></Header>
       <main>
         <Hero></Hero>
         {aboutSelected && <About></About>}
-        {projectsSelected && <Projects></Projects>}
+        {portfolioSelected && <Portfolio></Portfolio>}
         {resumeSelected && <Resume></Resume>}
         {contactSelected && <Contact></Contact>}
         <Footer></Footer>
