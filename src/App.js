@@ -13,10 +13,18 @@ import weatherDashboardScreenshot from './assets/images/weather-dashboard.png';
 import mookiesScreenshot from './assets/images/mookies-screenshot.png';
 import orbitWathcesScreenshot from './assets/images/orbit-watches-home.png';
 import socialInsomnia from './assets/images/insomnia.png';
-import schedulerSceenshot from './assets/images/work-day-scheduler.png';
+import nowYouKnowScreenshot from './assets/images/nowYouKnowScreenshot.png';
 
 function App() {
   const [projects] = useState([
+    {
+      name: 'Now You Know!',
+      githubLink: 'https://github.com/BDunham484/nowYouKnow',
+      projectLink: 'https://arcane-cliffs-23763.herokuapp.com/',
+      img: nowYouKnowScreenshot,
+      alt: 'A game to find out how well you and your friends know each other!',
+      projectText: 'An interactive MERN stack Single-Page Application quiz game to find out how well you and your friends know each other.'
+    },
     {
       name: 'PETSPACE',
       githubLink: 'https://www.github.com/BDunham484/petSpace',
@@ -56,14 +64,6 @@ function App() {
       img: socialInsomnia,
       alt: 'Insomnia routes.',
       projectText: 'The API for a social media site using MongoDB. CRUD methods can be run on users, thoughts, and reactions via routes and controllers in Insomnia. There is a User and Thought model. Reactions are a subdocument of thoughts.'
-    },
-    {
-      name: 'ALL IN A DAYS WORK',
-      githubLink: 'https://www.github.com/BDunham484/all-in-a-days-work',
-      projectLink: 'https://www.github.com/BDunham484/all-in-a-days-work',
-      img: schedulerSceenshot,
-      alt: 'A workday scheduler',
-      projectText: 'A third-party API based work day scheduler. It uses local storage for data persistence.'
     },
     {
       name: 'ORBIT WATCHES',
