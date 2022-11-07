@@ -12,9 +12,6 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/brad-dunham-56581b1b3/" target="_blank" rel="noreferrer">
                 <img src={linkedInLogo} alt="LinkedIn Logo" />
             </a>
-            <a href="https://www.instagram.com/orbit_watches/" target="_blank" rel="noreferrer">
-                <img src={instagramLogo} alt="Medium Logo" />
-            </a>
         </footer>
     )
 };
