@@ -72,32 +72,32 @@ function App() {
       img: orbitWathcesScreenshot,
       alt: "A neon sign in front of a black brick wall that reads 'Orbit-Watches'.",
       projectText: 'I develop Fitbit clock faces and sell them in their app store. The clock faces are developed using SVG, CSS, JS and a decent helping of Photoshop. This is a simple website I built to showcase them all.'
-    } 
+    }
   ])
 
   const [aboutSelected, setAboutSelected] = useState(true);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   const [contactSelected, setContactSelected] = useState(false);
   const [resumeSelected, setResumeSelected] = useState(false);
-  
+
   return (
     <div>
       <Header
-      aboutSelected={aboutSelected}
-      setAboutSelected={setAboutSelected}
-      portfolioSelected={portfolioSelected}
-      setPortfolioSelected={setPortfolioSelected}
-      resumeSelected={resumeSelected}
-      setResumeSelected={setResumeSelected}
-      contactSelected={contactSelected}
-      setContactSelected={setContactSelected}
+        aboutSelected={aboutSelected}
+        setAboutSelected={setAboutSelected}
+        portfolioSelected={portfolioSelected}
+        setPortfolioSelected={setPortfolioSelected}
+        resumeSelected={resumeSelected}
+        setResumeSelected={setResumeSelected}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
       ></Header>
       <main>
         <Hero></Hero>
         {aboutSelected && <About></About>}
         {portfolioSelected && <Portfolio
-                              projects={projects}
-                              ></Portfolio>}
+          projects={projects}
+        ></Portfolio>}
         {resumeSelected && <Resume></Resume>}
         {contactSelected && <Contact></Contact>}
         <Footer></Footer>
