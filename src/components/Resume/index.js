@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ResumePDF from '../../assets/images/Resume.pdf';
+import ResumePDF from '../../assets/images/Brad-Dunham-Resume.pdf';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
 import { AiOutlineDownload } from 'react-icons/ai';
 import { Document, Page, pdfjs } from 'react-pdf'
