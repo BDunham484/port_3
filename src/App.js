@@ -12,11 +12,19 @@ import todaysTechScreenshot from './assets/images/tech-blog-home.png';
 import weatherDashboardScreenshot from './assets/images/weather-dashboard.png';
 import mookiesScreenshot from './assets/images/mookies-screenshot.png';
 import orbitWathcesScreenshot from './assets/images/orbit-watches-home.png';
-import socialInsomnia from './assets/images/insomnia.png';
+import noisebxScreenshot from './assets/images/home-loggedIn.png';
 import nowYouKnowScreenshot from './assets/images/nowYouKnowScreenshot.png';
 
 function App() {
   const [projects] = useState([
+    {
+      name: 'NOISEBX',
+      githubLink: 'https://www.github.com/BDunmham484/psychic-rotary-system',
+      projectLink: 'https://whispering-retreat-35925.herokuapp.com/',
+      img: noisebxScreenshot,
+      alt: 'A local concert listing app',
+      projectText: 'A SPA React App that scrapes local concerts listings and displays them depending on the day selected.  Allows users to login/signup.  Once logged in users can save concerts to their user profile, RSVP yes, no, or maybe to the selected concert, add other user profiles as friends, and view their friends profiles/concerts. Under active development. Many other features to be added soon.'
+    },
     {
       name: 'Now You Know!',
       githubLink: 'https://github.com/BDunham484/nowYouKnow',
@@ -56,14 +64,6 @@ function App() {
       img: mookiesScreenshot,
       alt: 'An entertainment search engine that displays movie results to the lower left and book results to the lower right.',
       projectText: "An entertainment search engine using 3rd party API's. Enter your query into the search bar and recieve movie results on the left from one API and book results on the right from another."
-    },
-    {
-      name: 'SOCIAL MEDIA API',
-      githubLink: 'https://www.github.com/BDunmham484/social-media-api',
-      projectLink: 'https://www.github.com/BDunham484/social-media-api',
-      img: socialInsomnia,
-      alt: 'Insomnia routes.',
-      projectText: 'The API for a social media site using MongoDB. CRUD methods can be run on users, thoughts, and reactions via routes and controllers in Insomnia. There is a User and Thought model. Reactions are a subdocument of thoughts.'
     },
     {
       name: 'ORBIT WATCHES',
