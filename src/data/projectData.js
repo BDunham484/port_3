@@ -1,10 +1,10 @@
-import petSpaceScreenshot from '../assets/images/petSpace-screenshot.png';
-import todaysTechScreenshot from '../assets/images/tech-blog-home.png';
-import weatherDashboardScreenshot from '../assets/images/weather-dashboard.png';
-import mookiesScreenshot from '../assets/images/mookies-screenshot.png';
-import orbitWathcesScreenshot from '../assets/images/orbit-watches-home.png';
-import noisebxScreenshot from '../assets/images/home-loggedIn.png';
-import nowYouKnowScreenshot from '../assets/images/nowYouKnowScreenshot.png';
+import petSpaceScreenshot from '../assets/images/project-screenshots/petSpace-screenshot.png';
+import todaysTechScreenshot from '../assets/images/project-screenshots/tech-blog-home.png';
+import weatherDashboardScreenshot from '../assets/images/project-screenshots/weather-dashboard.png';
+import mookiesScreenshot from '../assets/images/project-screenshots/mookies-screenshot.png';
+import orbitWathcesScreenshot from '../assets/images/project-screenshots/orbit-watches-home.png';
+import noisebxScreenshot from '../assets/images/project-screenshots/home-loggedIn.png';
+import nowYouKnowScreenshot from '../assets/images/project-screenshots/nowYouKnowScreenshot.png';
 
 const ProjectData = [
     {
