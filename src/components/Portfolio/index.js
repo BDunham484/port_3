@@ -1,17 +1,17 @@
 import React from 'react';
 import githubLogo from '../../assets/images/github-circle-small.png';
+import ProjectData from '../../data/projectData';
 
-const Portfolio = (props) => {
-    const {
-        projects = [],
-    } = props;
+const Portfolio = () => {
+    
+    const projects = ProjectData;
     
     return (
         // <!-- PROJECTS SECTION -->
         <section id="portfolio">
             <div className="project-wrapper">
-                {projects.map((project) => (
-                    <div>
+                {projects.map((project, index) => (
+                    <div key={index}>
                         <div className="project-title-wrapper">
                             <p className='wrapped-titles'>
                                 {project.name}
