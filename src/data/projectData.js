@@ -13,7 +13,7 @@ const ProjectData = [
         projectLink: 'https://whispering-retreat-35925.herokuapp.com/',
         img: noisebxScreenshot,
         alt: 'A local concert listing app',
-        projectText: 'A React SPA that scrapes local concert listings and displays them depending on the day selected.  Allows users to login/signup.  Once logged in, users can save concerts to their user profile, RSVP yes, no, or maybe to the selected concert, add other user profiles as friends, and view their friends profiles/concerts. Under active development. Many other features to be added soon.'
+        projectText: 'A React App that scrapes local concert listings and displays them depending on the day selected.  Allows users to login/signup.  Once logged in, users can save concerts to their user profile, RSVP yes, no, or maybe to the selected concert, add other user profiles as friends, and view their friends profiles/concerts. Under active development. Many other features to be added soon.'
     },
     {
         name: 'NOW YOU KNOW!',
